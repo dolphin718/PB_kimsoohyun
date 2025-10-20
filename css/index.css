@@ -222,6 +222,7 @@ body {
 	/* ----------------- section project --------------  */
 
 	section.pro {
+		position: relative;
 		overflow: hidden;
 		position: relative;
 		width: 100%;
@@ -308,8 +309,6 @@ body {
 
 	section.pro div.bottom_wrap video {
 		width: 75vw;
-		max-width: 600px;
-    	height: auto;
 	}
 
 	section.pro div.bottom_wrap p {
@@ -372,6 +371,7 @@ body {
 	/* ----------------- section another --------------  */
 
 	section.another {
+		position: relative;
 		overflow: hidden;
 		position: relative;
 		width: 100vw;
@@ -517,7 +517,7 @@ body {
 
 	section.visual h1 {
 		position: relative;
-		font-size: clamp(10em, 15vw, 20em);
+		font-size: 20em;
 		line-height: 1.2;
 	}
 
@@ -737,7 +737,7 @@ body {
 	}
 
 	section.pro p.sub {
-		font-family: "Sansation", sans-serif;
+		font-family: '"Sansation", sans-serif-Regular';
 		font-size: 2.25em;
 		padding-bottom: 3.125vw;
 	}
@@ -814,8 +814,6 @@ body {
 
 	section.pro div.bottom_wrap video {
 		width: 50%;
-		max-width: 600px;
-    	height: auto;
 	}
 
 	section.pro div.bottom_wrap .page_wrap {
@@ -824,7 +822,7 @@ body {
 
 	section.pro div.bottom_wrap p {
 		font-size: 1.25em;
-		font-family: "Sansation", sans-serif;
+		font-family: '"Sansation", sans-serif-Reguler';
 		line-height: 1.5;
 		padding: 0 0 3.125vw;
 		text-overflow: ellipsis;
@@ -840,6 +838,7 @@ body {
 	/* ----------------- section another --------------  */
 
 	section.another {
+		position: relative;
 		overflow: hidden;
 		position: relative;
 		width: 100vw;
@@ -877,7 +876,7 @@ body {
 	}
 
 	section.another div.inner_wrap_02 ul li {
-		flex: 0 0 auto;
+		flex: 0 0 0%;
 		float: left;
 		text-align: center;
 	}
@@ -890,7 +889,7 @@ body {
 	}
 
 	section.another div.inner_wrap_02 ul li div {
-		display: none;
+		display: none
 	}
 
 	section.another div.inner_wrap_02 ul li img {
@@ -910,7 +909,7 @@ body {
 	}
 
 	section.another div.inner_wrap_02 p.desc {
-		font-family: "Sansation", sans-serif;
+		font-family: '"Sansation", sans-serif-Regular';
 		font-size: 1em;
 		line-height: 1.5;
 	}
@@ -919,6 +918,4 @@ body {
 }
 
 
-
 /* PC(end) */
-
