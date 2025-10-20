@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>SOOHYUN_PORTFOLIO</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="images/favi.ico" type="image/x-icon">
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap">
+	<script src="js/common.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const text = "안녕하세요. 금융/카드사 전문인력 퍼블리셔 김수현입니다.";
+		const target = document.getElementById("typing-text");
+
+		let index = 0;
+		const speed = 100;
+
+		function typeLetter() {
+			if (index < text.length) {
+				target.innerHTML += text.charAt(index);
+				index++;
+				setTimeout(typeLetter, speed);
+			}
+		}
+
+		typeLetter();
+	});
+</script>
+
+<body>
+
+
+	<section class="visual">
+		<div class="inner_wrap">
+			<header>
+				<nav>
+					<a href="#" class="active">INTRODUCE</a>
+					<a href="#">PROJECT</a>
+					<a href="#">ANOTHER</a>
+				</nav>
+				<h1>SOOHYUN</h1>
+				<div class="hash_wrap">
+					<p id="typing-text"></p>
+				</div>
+				<img src="images/img_index_intro_01.jpg" alt="프로필 사진" class="img_01"><img
+					src="images/img_index_intro_01.jpg" alt="프로필 사진" class="img_02">
+				<p class="sub">ACTIVE PERSON.</p>
+			</header>
+		</div>
+	</section>
+
+	<section class="introduce">
+		<div class="inner_wrap">
+			<div class="left_wrap FI_grp fi_4 active">
+				<h2>INTRODUCE</h2>
+				<img src="images/img_index_intro_01.jpg" alt="프로필 사진">
+			</div>
+			<div class="right_wrap FI_grp fi_2 active">
+				<div class="intro_01 ">
+					<p class="_b">NAME</p>
+					<p class="_a">김수현</p>
+				</div>
+				<div class="intro_02">
+					<p class="_b">PHONE</p>
+					<p class="_a">010.8683.5283</p>
+				</div>
+				<div class="intro_03">
+					<p class="_b">BIRTH</p>
+					<p class="_a">1995.07.17</p>
+				</div>
+				<div class="intro_04">
+					<p class="_b">E-MAIL</p>
+					<p class="_a">hyunny718@naver.com</p>
+				</div>
+				<div class="intro_05">
+					<p class="_b">PERSONALITY</p>
+					<p class="_a">유연함</p>
+					<p class="_a">적응력</p>
+					<p class="_a">판단력</p>
+					<p class="_a">긍정적</p>
+
+				</div>
+				<div class="intro_06">
+					<p class="_b">SKILLS</p>
+					<img src="images/img_index_ico_01.png" alt="HTML5">
+					<img src="images/img_index_ico_02.png" alt="CSS3">
+					<img src="images/img_index_ico_03.png" alt="JAVASCRIPT">
+					<img src="images/img_index_ico_04.png" alt="VUE">
+					<img src="images/img_index_ico_05.png" alt="AEM">
+					<img src="images/img_index_ico_06.png" alt="ICS">
+					<img src="images/img_index_ico_07.png" alt="FIGMA">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="samsung pro">
+
+		<div class="inner_wrap">
+			<div class="top_wrap">
+				<p class="FI_grp fi_4 active">01</p>
+				<p class="FI_grp fi_2 active">운영,구축 / 반응형</p>
+			</div>
+			<div class="pro_wrap">
+				<h2 class="FI_grp fi_3 active">SAMSUNG</h2>
+				<p class="sub FI_grp fi_3 active">다국어 모바일 언팩/운영<br>2020-08 ~ 2022-01</p>
+			</div>
+			<div class="bottom_wrap clearfix">
+				<video src="media/pj1_video.mp4" controls="hide" autoplay="autoplay" muted="muted" loop="loop"
+					class="FI_grp fi_4 active"></video>
+				<div class="page_wrap FI_grp fi_2 active">
+					<p>AEM이용과 함께 html, css, javascript를 사용하여 운영, 구축작업에 참여했습니다.<br>S언팩, Z언팩, eco</p>
+					<div class="btn_wrap">
+						<a href="https://www.samsung.com/uk/smartphones/galaxy-s/galaxy-s21-ultra-5g-phantom-black-128gb-sm5g998bzkdeub/"
+							class="detail"><span>바로 가기</span></a>
+						<a href="#" class="go"><span>자세히</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+	</section>
+
+
+	<section class="shinhan pro">
+		<div class="inner_wrap">
+			<div class="top_wrap">
+				<p class="FI_grp fi_4 active">02</p>
+				<p class="FI_grp fi_2 active">운영 / 반응형</p>
+			</div>
+			<div class="pro_wrap">
+				<h2 class="FI_grp fi_3 active">Shinhan Card</h2>
+				<p class="sub FI_grp fi_3 active">신한카드/마이카/아름인 운영<br>2022-02 ~ 2024-12</p>
+			</div>
+			<div class="bottom_wrap clearfix">
+				<video src="media/pj2_video.mp4" controls="hide" autoplay="autoplay" muted="muted" loop="loop"
+					class="FI_grp fi_4 active"></video>
+				<div class="page_wrap FI_grp fi_2 active">
+					<p>ICS(CMS)툴에서 마크업을 저장하여 페이지 운영작업을 진행했습니다.<br>마이, 혜택, 금융, 서비스, 마이카, 아름인, 이메일 등 작업했습니다.</p>
+					<div class="btn_wrap">
+						<a href="https://www.shinhancard.com/pconts/html/main.html" class="detail"><span>바로
+								가기</span></a>
+						<a href="/email.html" class="go"><span>자세히</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="nhcard pro">
+
+		<div class="inner_wrap">
+			<div class="top_wrap">
+				<p class="FI_grp fi_4 active">03</p>
+				<p class="FI_grp fi_2 active">구축 / 모바일</p>
+			</div>
+			<div class="pro_wrap">
+
+				<h2 class="FI_grp fi_3 active">NH농협카드</h2>
+				<p class="sub FI_grp fi_3 active">다국어 고도화 구축<br>2025-05 ~ 2025-10</p>
+			</div>
+			<div class="bottom_wrap clearfix">
+				<video src="media/pj3_video.mp4" controls="hide" autoplay="autoplay" muted="muted" loop="loop"
+					class="FI_grp fi_4 active"></video>
+				<div class="page_wrap FI_grp fi_2 active">
+					<p>VUE환경에 html, scss, javascript를 이용하여 기존 상시페이지를 토대로 외국인 환경에 맞추는 작업이였습니다.<br>로그인, 설정, 회원가입 등 작업했습니다.</p>
+					<div class="btn_wrap">
+						<a href="https://m4a.co.kr/html/WorksDetail1.html" class="detail"><span>바로 가기</span></a>
+						<a href="" class="go"><span>자세히</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="m4a pro">
+		<div class="inner_wrap">
+			<div class="top_wrap clearfix">
+				<p class="FI_grp fi_4 active">04</p>
+				<p class="FI_grp fi_2 active">구축 / 반응형</p>
+			</div>
+			<div class="pro_wrap">
+				<h2 class="FI_grp fi_3 active">M4a</h2>
+				<p class="sub FI_grp fi_3 active">홈페이지 리뉴얼 구축<br>2025-03 ~ 2025-05</p>
+			</div>
+			<div class="bottom_wrap clearfix">
+				<video src="media/pj4_video.mp4" controls="hide" autoplay="autoplay" muted="muted" loop="loop"
+					class="FI_grp fi_4 active"></video>
+				<div class="page_wrap FI_grp fi_2 active">
+					<p>사내 홈페이지 리뉴얼 프로젝트 참여</p>
+					<div class="btn_wrap">
+						<a href="https://m4a.co.kr/html/Works.html" class="detail"><span>바로 가기</span></a>
+						<a href="" class="go"><span>자세히</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="another">
+		<div class="inner_wrap_02">
+			<h2 class="FI_grp fi_4 active">Another</h2>
+			<div class="scroll_wrap">
+				<ul>
+					<li class="FI_grp fi_3 active">
+						<a href="https://www.shinhancard.com/mob/MOBFM711N/MOBFM711R01.shc?crustMenuId=ms232"><img
+								src="images/img_index_artwork_01.jpg" alt="신한 아름인 페이지">
+						</a>
+						<p class="name">신한 아름인</p>
+						<p class="desc">아름인 이벤트페이지 마크업</p>
+
+					</li>
+					<li class="FI_grp fi_3 active">
+						<a href="/email.html"><img src="images/img_index_artwork_02.jpg" alt="신한카드 email"></a>
+						<p class="name">신한카드 email</p>
+						<p class="desc">명세서/안내서/이벤트 email 마크업</p>
+					</li>
+					<li class="FI_grp fi_3 active">
+						<a href="https://www.samsung.com/uk/smartphones/all-smartphones/"><img
+								src="images/img_index_artwork_03.jpg" alt=" 오디션 포스터"></a>
+						<p class="name">Galaxy smartphones</p>
+						<p class="desc">128국가 언팩(roll out)/ 핫픽스/ 파일럿제작<br>/ SKU, bestmatch/ 캠페인 </p>
+					</li>
+					<li class="FI_grp fi_3 active">
+						<a href="#"><img src="images/img_index_artwork_04.jpg" alt="NHpay 외국인어플 오픈 전"></a>
+						<p class="name">NH농협카드 고도화</p>
+						<p class="desc">외국인어플 로그인/ 설정/ 공통페이지</p>
+					</li>
+					<li class="FI_grp fi_3 active">
+						<a href="tel:01086835283">
+							<img src="images/img_index_artwork_05.jpg" alt="NHpay">
+						</a>
+						<p class="name">CONTACT</p>
+						<p class="desc">
+							<a href="mailto:hyunny718@naver.com">hyunny718@naver.com</a>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>

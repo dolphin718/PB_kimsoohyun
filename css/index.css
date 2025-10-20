@@ -1,0 +1,921 @@
+@charset "utf-8";
+
+
+.sansation-light {
+	font-family: "Sansation", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.sansation-regular {
+	font-family: "Sansation", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.sansation-bold {
+	font-family: "Sansation", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.sansation-light-italic {
+	font-family: "Sansation", sans-serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.sansation-regular-italic {
+	font-family: "Sansation", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.sansation-bold-italic {
+	font-family: "Sansation", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+section {
+	overflow: hidden;
+}
+
+body {
+	font-family: "Sansation", sans-serif;
+}
+
+
+
+/* 모바일(start) */
+
+@media screen and (max-width: 767px) {
+
+
+	section.visual {
+		overflow: hidden;
+		position: relative;
+		width: 100vw;
+		height: 100vh;
+		background: linear-gradient(to bottom, #a8edea, #fff);
+	}
+
+	section.visual div.inner_wrap {
+		width: 85vw;
+		height: 100%;
+	}
+
+	header {
+		overflow: hidden;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 100;
+	}
+
+	header nav {
+		position: relative;
+		z-index: 10;
+		margin: 0 7.96875vw;
+		text-align: center;
+		width: max-content;
+	}
+
+	header nav a {
+		overflow: hidden;
+		position: relative;
+		font-size: 1em;
+		margin: 0 1.5vw;
+	}
+
+	header a::after {
+		content: "";
+		position: absolute;
+		top: 55%;
+		left: 50%;
+		transform: translate(-50%, -50%) rotate(-3deg) scaleX(0);
+		width: 110%;
+		height: 0.6em;
+		border-radius: 0.2em;
+		z-index: -1;
+		transition: transform 0.3s ease;
+		transform-origin: center;
+	}
+
+	header a.active::after {
+		background: #00ffff;
+		transform: translate(-50%, -50%) rotate(-3deg) scaleX(1);
+	}
+
+	header img {
+		display: block;
+		width: 66.25vw;
+		object-fit: cover;
+		margin: 3.90625vw 0;
+		margin: 20px auto;
+	}
+
+	header img:nth-of-type(1) {
+		display: none;
+	}
+
+
+	section.visual h1 {
+		position: relative;
+		font-size: 3.6875em;
+		line-height: 1.2;
+		text-align: center;
+	}
+
+	section.visual div.hash_wrap {
+		position: relative;
+		font-size: 1em;
+		text-align: right;
+		margin: 0 7.96875vw;
+		text-align: center;
+	}
+
+	section.visual div.hash_wrap p {
+		display: inline-block;
+		padding-left: 1.5625vw;
+	}
+
+	section.visual p.sub {
+		font-size: 2em;
+		line-height: 1;
+		text-align: center;
+	}
+
+
+
+	/* ----------------- section introduce --------------  */
+
+
+	section.introduce {
+		overflow: hidden;
+		position: relative;
+		width: 100vw;
+		height: 100vh;
+		background: linear-gradient(to bottom, #fff, #a1a1a1, #000000);
+	}
+
+	section.introduce div.inner_wrap {
+		width: 90vw;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+
+	section.introduce div.left_wrap h2 {
+		display: none;
+	}
+
+	section.introduce div.left_wrap img {
+		display: none;
+	}
+
+	section.introduce div.right_wrap {
+		line-height: 1.5;
+	}
+
+
+	section.introduce div.right_wrap p._a:nth-last-of-type(1) {
+		padding-bottom: 15px;
+	}
+
+	section.introduce div.right_wrap div p._b {
+		padding-bottom: 6px;
+	}
+
+	section.introduce div.right_wrap p._b {
+		font-size: 1.25em;
+	}
+
+	section.introduce div.right_wrap p._a {
+		font-size: 0.8rem;
+	}
+
+	section.introduce div.intro_05>p._a {
+		display: inline-block;
+		padding-right: 1.125vw;
+	}
+
+	section.introduce div.intro_06 {
+		width: 100%;
+		margin: auto;
+	}
+
+	section.introduce div.intro_06 img {
+		display: inline-block;
+		width: 8.465341vw;
+		object-fit: cover;
+		padding-bottom: 10px;
+	}
+
+	section.introduce div.intro_06 {
+		line-height: 1.7;
+	}
+
+	/* ----------------- section project --------------  */
+
+	section.pro {
+		position: relative;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+		height: 100vh;
+	}
+
+	section.samsung,
+	section.shinhan,
+	section.nhcard,
+	section.m4a {
+		color: #FFF;
+	}
+
+	section.samsung {
+		background: url("../images/img_index_project_bg_01_D.jpg") no-repeat center;
+		background-size: cover;
+	}
+
+	section.shinhan {
+		background: url("../images/img_index_project_bg_02_D.jpg") no-repeat center;
+		background-size: cover;
+	}
+
+	section.nhcard {
+		background: url("../images/img_index_project_bg_03_D.jpg") no-repeat center;
+		background-size: cover;
+	}
+
+	section.m4a {
+		background: url("../images/img_index_project_bg_04_D.jpg") no-repeat center;
+		background-size: cover;
+	}
+
+	section.pro div.inner_wrap {
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	section.pro div.top_wrap {
+		width: 100%;
+		font-size: 0.875em;
+		padding-bottom: 40px;
+	}
+
+	section.pro div.top_wrap p:nth-child(1) {
+		float: left;
+	}
+
+	section.pro div.top_wrap p:nth-child(2) {
+		float: right;
+	}
+
+	section.pro h2 {
+		clear: both;
+		font-size: 2.5em;
+		line-height: 1.5;
+		vertical-align: middle;
+	}
+
+	section.pro p.sub {
+		font-size: 1em;
+		padding-bottom: 30px;
+	}
+
+	section.pro div.page_wrap {
+		flex: 1;
+		padding: 20px 0;
+	}
+
+	section.pro a.go {
+		display: inline-block;
+		width: 2.5em;
+		height: 2.5em;
+	}
+
+	section.pro div.bottom_wrap {
+		margin: auto;
+	}
+
+	section.pro div.bottom_wrap video {
+		width: 75vw;
+	}
+
+	section.pro div.bottom_wrap p {
+		width: 75vw;
+		font-size: 1em;
+		line-height: 1.5;
+		padding-bottom: 20px;
+		margin: auto;
+	}
+
+	section.samsung a.detail,
+	section.shinhan a.detail,
+	section.nhcard a.detail,
+	section.m4a a.detail {
+		width: 6rem;
+		height: 2.5rem;
+		border: 1px solid #FFF;
+		color: #FFF;
+		border-radius: 20px;
+		text-decoration: none;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 14px;
+	}
+
+	section.samsung a.go,
+	section.shinhan a.go,
+	section.nhcard a.go,
+	section.m4a a.go {
+		margin-left: 0.3rem;
+		width: 6rem;
+		height: 2.5rem;
+		border: none;
+		border-radius: 20px;
+		background-color: rgba(255, 255, 255, 0.7);
+		text-decoration: none;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 14px;
+	}
+
+	section.samsung a.go {
+		color: #000;
+	}
+
+	section.shinhan a.go {
+		color: #7c81bb;
+	}
+
+	section.nhcard a.go {
+		color: #202020;
+	}
+
+	section.m4a a.go {
+		color: #9e885a;
+	}
+
+	/* ----------------- section another --------------  */
+
+	section.another {
+		position: relative;
+		overflow: hidden;
+		position: relative;
+		width: 100vw;
+		height: 100vh;
+		overflow-x: auto;
+		overflow-y: hidden;
+		background-color: #d7e4e3;
+	}
+
+	section.another div.inner_wrap_02 {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		white-space: nowrap;
+		overflow-x: auto;
+		text-align: center;
+	}
+
+	section.another h2 {
+		font-size: 2em;
+		width: 100%;
+		padding: 40px 0px;
+	}
+
+	section.another div.inner_wrap_02 ul {
+		display: flex;
+		width: 500%;
+		justify-content: space-around;
+		transition: transform 0.3s ease;
+	}
+
+	section.another div.inner_wrap_02 ul li {
+		flex: 0 0 20%;
+		float: left;
+		text-align: center;
+	}
+
+	section.another div.inner_wrap_02 ul li a {
+		overflow: hidden;
+		display: inline-block;
+		width: 75.375vw;
+		height: 75.375vw;
+	}
+
+	section.another div.inner_wrap_02 ul li img {
+		width: 100%;
+		object-fit: cover;
+	}
+
+	section.another div.inner_wrap_02 p.name {
+		width: 75.375vw;
+		font-size: 1.5em;
+		margin: 15px auto;
+	}
+
+	section.another div.inner_wrap_02 p.desc {
+		font-size: 13px;
+		line-height: 1.5;
+	}
+
+
+
+
+
+
+
+
+}
+
+
+
+/* 모바일(end) */
+
+
+
+/* PC(start) */
+
+@media screen and (min-width: 768px) {
+
+
+	section.visual {
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		background: linear-gradient(to bottom, #a8edea, #fff);
+	}
+
+	section.visual div.inner_wrap {
+		width: 80%;
+		height: 100%;
+	}
+
+	header {
+		overflow: hidden;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 100;
+	}
+
+	header nav {
+		position: relative;
+		z-index: 10;
+	}
+
+	header a {
+		overflow: hidden;
+		position: relative;
+		font-size: 3.375em;
+		margin: 0 1.5vw;
+
+	}
+
+	header a::after {
+		content: "";
+		position: absolute;
+		top: 55%;
+		left: 50%;
+		transform: translate(-50%, -50%) rotate(-3deg) scaleX(0);
+		width: 110%;
+		height: 0.6em;
+		border-radius: 0.2em;
+		z-index: -1;
+		transition: transform 0.3s ease;
+		transform-origin: center;
+	}
+
+	header a:hover::after {
+		background: #ffff00;
+		transform: translate(-50%, -50%) rotate(-3deg) scaleX(1);
+	}
+
+	header a.active::after {
+		background: #00ffff;
+		transform: translate(-50%, -50%) rotate(-3deg) scaleX(1);
+	}
+
+	header img {
+		display: none;
+	}
+
+	section.visual h1 {
+		position: relative;
+		font-size: 20em;
+		line-height: 1.2;
+	}
+
+	section.visual h1:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 200%;
+		height: 6px;
+		background: #000;
+	}
+
+	section.visual h1:after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		display: block;
+		width: 200%;
+		height: 6px;
+		background: #000;
+	}
+
+	section.visual div.hash_wrap {
+		position: relative;
+		font-size: 2.875em;
+		text-align: right;
+		line-height: 1.5;
+	}
+
+	section.visual div.hash_wrap:after {
+		content: "";
+		position: absolute;
+		top: 100%;
+		left: 0;
+		display: block;
+		width: 200%;
+		height: 6px;
+		background: #000;
+	}
+
+	section.visual div.hash_wrap p {
+		display: inline-block;
+		padding-left: 1.5625vw;
+	}
+
+	section.visual p.sub {
+		font-size: 8.75em;
+		line-height: 1.2;
+		text-align: center;
+	}
+
+	section.introduce {
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		background: linear-gradient(to bottom, #fff, #000000);
+
+	}
+
+	section.introduce div.inner_wrap {
+		display: flex;
+		align-items: center;
+		width: 75vw;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	section.introduce div.left_wrap {
+		flex: 0 0 50%;
+	}
+
+	section.introduce div.left_wrap h2 {
+		font-size: 3.125em;
+		padding-bottom: 1.5625vw;
+	}
+
+	section.introduce div.left_wrap img {
+		width: 26.5625vw;
+		object-fit: cover;
+	}
+
+	section.introduce div.right_wrap {
+		flex: 0 0 50%;
+		line-height: 1.5;
+	}
+
+	section.introduce div.right_wrap div:nth-child(1) {
+		float: left;
+		width: 50%;
+	}
+
+	section.introduce div.right_wrap div:nth-child(3) {
+		float: left;
+		width: 50%;
+	}
+
+	section.introduce div.right_wrap div:nth-child(2) {
+		float: right;
+		width: 50%;
+	}
+
+	section.introduce div.right_wrap div:nth-child(4) {
+		float: right;
+		width: 50%;
+	}
+
+	section.introduce div.right_wrap div p._b {
+		padding-bottom: 0.520833333vw;
+	}
+
+	section.introduce div.right_wrap div p._a {
+		padding-bottom: 1.041666vw;
+	}
+
+	section.introduce div.right_wrap p._b {
+		font-size: 2.25em;
+	}
+
+	section.introduce div.right_wrap p._a {
+		font-size: 1.5em;
+	}
+
+	section.introduce div.intro_05>p._a {
+		display: inline-block;
+		padding-right: 1.125vw;
+	}
+
+	section.introduce div.intro_06 img {
+		width: 3.6458vw;
+		object-fit: cover;
+		padding-bottom: 20px;
+	}
+
+
+
+
+	/* ----------------- section project --------------  */
+
+	section.pro {
+		position: relative;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+		height: 100vh;
+	}
+
+	section.samsung,
+	section.shinhan,
+	section.nhcard,
+	section.m4a {
+		color: #FFF;
+
+	}
+
+	section.samsung {
+		background: url("../images/img_index_project_bg_01_D.jpg") no-repeat center;
+		background-size: cover;
+	}
+
+	section.shinhan {
+		background: url("../images/img_index_project_bg_02_D.jpg") no-repeat center;
+		background-size: cover;
+	}
+
+	section.nhcard {
+		background: url("../images/img_index_project_bg_03_D.jpg") no-repeat center;
+		background-size: cover;
+	}
+
+	section.m4a {
+		background: url("../images/img_index_project_bg_04_D.jpg") no-repeat center;
+		background-size: cover;
+	}
+
+	section.pro div.inner_wrap {
+		width: 90%;
+		margin: 0 auto;
+		/* text-align: center; */
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.pro_wrap {
+		text-align: center;
+	}
+
+	.btn_wrap {
+		text-align: right;
+	}
+
+	section.pro div.top_wrap {
+		width: 100%;
+		font-size: 2.5vw;
+	}
+
+	section.pro div.top_wrap p:nth-child(1) {
+		float: left;
+	}
+
+	section.pro div.top_wrap p:nth-child(2) {
+		float: right;
+	}
+
+	section.pro h2 {
+		clear: both;
+		font-size: 11.87em;
+		line-height: 1.2;
+		vertical-align: middle;
+	}
+
+	section.pro p.sub {
+		font-family: '"Sansation", sans-serif-Regular';
+		font-size: 2.25em;
+		padding-bottom: 3.125vw;
+	}
+
+	section.pro div.page_wrap {
+		flex: 1;
+		padding: 5.25em;
+	}
+
+	section.pro a.go {
+		display: inline-block;
+		width: 3em;
+		height: 3em;
+	}
+
+	section.pro div.bottom_wrap {
+		display: flex;
+		align-items: center;
+		width: 60%;
+		margin: auto;
+		overflow: hidden;
+	}
+
+	section.samsung a.detail,
+	section.shinhan a.detail,
+	section.nhcard a.detail,
+	section.m4a a.detail {
+		width: 6rem;
+		height: 2.5rem;
+		border: 1px solid #FFF;
+		color: #FFF;
+		border-radius: 20px;
+		text-decoration: none;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 14px;
+	}
+
+	section.samsung a.go,
+	section.shinhan a.go,
+	section.nhcard a.go,
+	section.m4a a.go {
+		margin-left: 0.3rem;
+		width: 6rem;
+		height: 2.5rem;
+		border: none;
+		border-radius: 20px;
+		background-color: rgba(255, 255, 255, 0.7);
+		text-decoration: none;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 14px;
+	}
+
+	section.samsung a.go {
+		color: #000;
+	}
+
+	section.shinhan a.go {
+		color: #7c81bb;
+	}
+
+	section.nhcard a.go {
+		color: #202020;
+	}
+
+	section.m4a a.go {
+		color: #9e885a;
+	}
+
+
+
+	section.pro div.bottom_wrap video {
+		width: 50%;
+	}
+
+	section.pro div.bottom_wrap .page_wrap {
+		width: 100%;
+	}
+
+	section.pro div.bottom_wrap p {
+		font-size: 1.25em;
+		font-family: '"Sansation", sans-serif-Reguler';
+		line-height: 1.5;
+		padding: 0 0 3.125vw;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical;
+		height: calc(1.5em * 4);
+	}
+
+
+
+	/* ----------------- section another --------------  */
+
+	section.another {
+		position: relative;
+		overflow: hidden;
+		position: relative;
+		width: 100vw;
+		height: 100vh;
+		overflow-x: auto;
+		overflow-y: hidden;
+		background-color: #d7e4e3;
+	}
+
+	section.another div.inner_wrap_02 {
+		display: flex;
+		align-items: center;
+		position: relative;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		width: 100%;
+		height: 100%;
+		white-space: nowrap;
+		overflow-x: auto;
+	}
+
+	section.another h2 {
+		font-size: 3.5vw;
+		width: 90%;
+		padding-bottom: 3.125vw;
+		margin-left: 7vw;
+	}
+
+	section.another div.inner_wrap_02 ul {
+		display: flex;
+		width: 180%;
+		justify-content: space-around;
+		transition: transform 0.3s ease;
+	}
+
+	section.another div.inner_wrap_02 ul li {
+		flex: 0 0 0%;
+		float: left;
+		text-align: center;
+	}
+
+	section.another div.inner_wrap_02 ul li a {
+		overflow: hidden;
+		display: block;
+		width: 21.875vw;
+		height: 21.875vw;
+	}
+
+	section.another div.inner_wrap_02 ul li div {
+		display: none
+	}
+
+	section.another div.inner_wrap_02 ul li img {
+		width: 21.875vw;
+		object-fit: cover;
+	}
+
+	section.another div.inner_wrap_02 ul li:hover img {
+		transform: scale(1.1);
+		transition: transform 0.3s;
+	}
+
+	section.another div.inner_wrap_02 p.name {
+		width: 100%;
+		font-size: 1.666666vw;
+		margin: 2.0833333vw 0;
+	}
+
+	section.another div.inner_wrap_02 p.desc {
+		font-family: '"Sansation", sans-serif-Regular';
+		font-size: 1em;
+		line-height: 1.5;
+	}
+
+
+}
+
+
+/* PC(end) */
