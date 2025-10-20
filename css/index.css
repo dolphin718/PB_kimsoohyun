@@ -45,23 +45,7 @@ body {
 	font-family: "Sansation", sans-serif;
 }
 
-body, html {
-  width: 100%;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
 
-#wrap {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-img, video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
 
 /* 모바일(start) */
 
@@ -238,7 +222,6 @@ img, video {
 	/* ----------------- section project --------------  */
 
 	section.pro {
-		position: relative;
 		overflow: hidden;
 		position: relative;
 		width: 100%;
@@ -325,6 +308,8 @@ img, video {
 
 	section.pro div.bottom_wrap video {
 		width: 75vw;
+		max-width: 600px;
+    	height: auto;
 	}
 
 	section.pro div.bottom_wrap p {
@@ -387,7 +372,6 @@ img, video {
 	/* ----------------- section another --------------  */
 
 	section.another {
-		position: relative;
 		overflow: hidden;
 		position: relative;
 		width: 100vw;
@@ -533,7 +517,7 @@ img, video {
 
 	section.visual h1 {
 		position: relative;
-		font-size: 20em;
+		font-size: clamp(10em, 15vw, 20em);
 		line-height: 1.2;
 	}
 
@@ -753,7 +737,7 @@ img, video {
 	}
 
 	section.pro p.sub {
-		font-family: '"Sansation", sans-serif-Regular';
+		font-family: "Sansation", sans-serif;
 		font-size: 2.25em;
 		padding-bottom: 3.125vw;
 	}
@@ -830,6 +814,8 @@ img, video {
 
 	section.pro div.bottom_wrap video {
 		width: 50%;
+		max-width: 600px;
+    	height: auto;
 	}
 
 	section.pro div.bottom_wrap .page_wrap {
@@ -838,7 +824,7 @@ img, video {
 
 	section.pro div.bottom_wrap p {
 		font-size: 1.25em;
-		font-family: '"Sansation", sans-serif-Reguler';
+		font-family: "Sansation", sans-serif;
 		line-height: 1.5;
 		padding: 0 0 3.125vw;
 		text-overflow: ellipsis;
@@ -854,7 +840,6 @@ img, video {
 	/* ----------------- section another --------------  */
 
 	section.another {
-		position: relative;
 		overflow: hidden;
 		position: relative;
 		width: 100vw;
@@ -892,7 +877,7 @@ img, video {
 	}
 
 	section.another div.inner_wrap_02 ul li {
-		flex: 0 0 0%;
+		flex: 0 0 auto;
 		float: left;
 		text-align: center;
 	}
@@ -905,7 +890,7 @@ img, video {
 	}
 
 	section.another div.inner_wrap_02 ul li div {
-		display: none
+		display: none;
 	}
 
 	section.another div.inner_wrap_02 ul li img {
@@ -925,7 +910,7 @@ img, video {
 	}
 
 	section.another div.inner_wrap_02 p.desc {
-		font-family: '"Sansation", sans-serif-Regular';
+		font-family: "Sansation", sans-serif;
 		font-size: 1em;
 		line-height: 1.5;
 	}
@@ -936,3 +921,4 @@ img, video {
 
 
 /* PC(end) */
+
