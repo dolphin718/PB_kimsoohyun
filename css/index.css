@@ -45,7 +45,23 @@ body {
 	font-family: "Sansation", sans-serif;
 }
 
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
 
+#wrap {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* 모바일(start) */
 
@@ -916,6 +932,7 @@ body {
 
 
 }
+
 
 
 /* PC(end) */
