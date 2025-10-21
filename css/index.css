@@ -699,7 +699,7 @@ body {
 
 	section.pro div.top_wrap {
 		width: 100%;
-		font-size: 2.5vw;
+		font-size: 2vw;
 	}
 
 	section.pro div.top_wrap p:nth-child(1) {
@@ -891,4 +891,5 @@ body {
 
 
 /* PC(end) */
+
 
