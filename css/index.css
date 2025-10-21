@@ -1,61 +1,70 @@
 @charset "utf-8";
+@font-face {
+    font-family: 'JalpulrineunHaruche';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Haru.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
 
-
-.sansation-light {
-	font-family: "Sansation", sans-serif;
+/* .sansation-light {
+	font-family: 'JalpulrineunHaruche';
 	font-weight: 300;
 	font-style: normal;
 }
 
 .sansation-regular {
-	font-family: "Sansation", sans-serif;
+	font-family: 'JalpulrineunHaruche';
 	font-weight: 400;
 	font-style: normal;
 }
 
 .sansation-bold {
-	font-family: "Sansation", sans-serif;
+	font-family: 'JalpulrineunHaruche';
 	font-weight: 700;
 	font-style: normal;
 }
 
 .sansation-light-italic {
-	font-family: "Sansation", sans-serif;
+	font-family: 'JalpulrineunHaruche';
 	font-weight: 300;
 	font-style: italic;
 }
 
 .sansation-regular-italic {
-	font-family: "Sansation", sans-serif;
+	font-family: 'JalpulrineunHaruche';
 	font-weight: 400;
 	font-style: italic;
 }
 
 .sansation-bold-italic {
-	font-family: "Sansation", sans-serif;
+	font-family: 'JalpulrineunHaruche';
 	font-weight: 700;
 	font-style: italic;
-}
+} */
 
 section {
 	overflow: hidden;
 }
 
 body {
-	font-family: "Sansation", sans-serif;
+	font-family: 'JalpulrineunHaruche';
+	font-weight: 200;
 }
 
-
+.inner_wrap {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 40px;
+}
 
 /* 모바일(start) */
 
-@media screen and (max-width: 767px) {
-
+@media screen and (max-width: 1024px) {
 
 	section.visual {
-		overflow: hidden;
 		position: relative;
-		width: 100vw;
+		width: 100%;
 		height: 100vh;
 		background: linear-gradient(to bottom, #a8edea, #fff);
 	}
@@ -83,7 +92,6 @@ body {
 	}
 
 	header nav a {
-		overflow: hidden;
 		position: relative;
 		font-size: 1em;
 		margin: 0 1.5vw;
@@ -153,9 +161,8 @@ body {
 
 
 	section.introduce {
-		overflow: hidden;
 		position: relative;
-		width: 100vw;
+		width: 100%;
 		height: 100vh;
 		background: linear-gradient(to bottom, #fff, #a1a1a1, #000000);
 	}
@@ -210,6 +217,7 @@ body {
 
 	section.introduce div.intro_06 img {
 		display: inline-block;
+  margin-right: 8px;
 		width: 8.465341vw;
 		object-fit: cover;
 		padding-bottom: 10px;
@@ -219,11 +227,13 @@ body {
 		line-height: 1.7;
 	}
 
+	.intro_06 img[alt="JAVASCRIPT"]::after {
+    content: "";
+    display: block; /* 줄바꿈 효과 */
+  }
 	/* ----------------- section project --------------  */
 
 	section.pro {
-		position: relative;
-		overflow: hidden;
 		position: relative;
 		width: 100%;
 		height: 100vh;
@@ -283,8 +293,10 @@ body {
 	section.pro h2 {
 		clear: both;
 		font-size: 2.5em;
-		line-height: 1.5;
+		line-height: 1.2;
 		vertical-align: middle;
+		font-weight: 600;
+		padding-bottom: 10px;
 	}
 
 	section.pro p.sub {
@@ -308,11 +320,11 @@ body {
 	}
 
 	section.pro div.bottom_wrap video {
-		width: 75vw;
+		width: 65vw;
 	}
 
 	section.pro div.bottom_wrap p {
-		width: 75vw;
+		width: 65vw;
 		font-size: 1em;
 		line-height: 1.5;
 		padding-bottom: 20px;
@@ -357,7 +369,7 @@ body {
 	}
 
 	section.shinhan a.go {
-		color: #7c81bb;
+		color: #474b72;
 	}
 
 	section.nhcard a.go {
@@ -365,16 +377,14 @@ body {
 	}
 
 	section.m4a a.go {
-		color: #9e885a;
+		color: #32471d;
 	}
 
 	/* ----------------- section another --------------  */
 
 	section.another {
 		position: relative;
-		overflow: hidden;
-		position: relative;
-		width: 100vw;
+		width: 100%;
 		height: 100vh;
 		overflow-x: auto;
 		overflow-y: hidden;
@@ -410,7 +420,6 @@ body {
 	}
 
 	section.another div.inner_wrap_02 ul li a {
-		overflow: hidden;
 		display: inline-block;
 		width: 75.375vw;
 		height: 75.375vw;
@@ -449,11 +458,9 @@ body {
 
 /* PC(start) */
 
-@media screen and (min-width: 768px) {
-
+@media screen and (min-width: 1025px) {
 
 	section.visual {
-		overflow: hidden;
 		position: relative;
 		width: 100%;
 		height: 100vh;
@@ -480,7 +487,6 @@ body {
 	}
 
 	header a {
-		overflow: hidden;
 		position: relative;
 		font-size: 3.375em;
 		margin: 0 1.5vw;
@@ -573,7 +579,6 @@ body {
 	}
 
 	section.introduce {
-		overflow: hidden;
 		position: relative;
 		width: 100%;
 		height: 100vh;
@@ -610,8 +615,17 @@ body {
 		line-height: 1.5;
 	}
 
-	section.introduce div.right_wrap div:nth-child(1) {
+	/* section.introduce div.right_wrap div:nth-child(1) {
 		float: left;
+		width: 50%;
+	} */
+
+	section.introduce div.right_wrap {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	section.introduce div.right_wrap div {
 		width: 50%;
 	}
 
@@ -664,8 +678,6 @@ body {
 
 	section.pro {
 		position: relative;
-		overflow: hidden;
-		position: relative;
 		width: 100%;
 		height: 100vh;
 	}
@@ -714,6 +726,7 @@ body {
 
 	.btn_wrap {
 		text-align: right;
+		margin-top: 5rem;
 	}
 
 	section.pro div.top_wrap {
@@ -734,12 +747,12 @@ body {
 		font-size: 11.87em;
 		line-height: 1.2;
 		vertical-align: middle;
+		font-weight: 400;
 	}
 
 	section.pro p.sub {
-		font-family: '"Sansation", sans-serif-Regular';
+		font-family: 'JalpulrineunHaruche';
 		font-size: 2.25em;
-		padding-bottom: 3.125vw;
 	}
 
 	section.pro div.page_wrap {
@@ -756,9 +769,8 @@ body {
 	section.pro div.bottom_wrap {
 		display: flex;
 		align-items: center;
-		width: 60%;
+		width: 100%;
 		margin: auto;
-		overflow: hidden;
 	}
 
 	section.samsung a.detail,
@@ -799,7 +811,7 @@ body {
 	}
 
 	section.shinhan a.go {
-		color: #7c81bb;
+		color: #474b72;
 	}
 
 	section.nhcard a.go {
@@ -807,7 +819,7 @@ body {
 	}
 
 	section.m4a a.go {
-		color: #9e885a;
+		color: #32471d;
 	}
 
 
@@ -822,15 +834,13 @@ body {
 
 	section.pro div.bottom_wrap p {
 		font-size: 1.25em;
-		font-family: '"Sansation", sans-serif-Reguler';
+		font-family: ''JalpulrineunHaruche'-Reguler';
 		line-height: 1.5;
 		padding: 0 0 3.125vw;
-		text-overflow: ellipsis;
-		overflow: hidden;
 		display: -webkit-box;
-		-webkit-line-clamp: 4;
 		-webkit-box-orient: vertical;
-		height: calc(1.5em * 4);
+		overflow: hidden;
+		-webkit-box-orient: vertical;
 	}
 
 
@@ -838,8 +848,6 @@ body {
 	/* ----------------- section another --------------  */
 
 	section.another {
-		position: relative;
-		overflow: hidden;
 		position: relative;
 		width: 100vw;
 		height: 100vh;
@@ -856,7 +864,7 @@ body {
 		bottom: 0;
 		margin: auto;
 		width: 100%;
-		height: 100%;
+		height: 140%;
 		white-space: nowrap;
 		overflow-x: auto;
 	}
@@ -882,14 +890,9 @@ body {
 	}
 
 	section.another div.inner_wrap_02 ul li a {
-		overflow: hidden;
 		display: block;
 		width: 21.875vw;
 		height: 21.875vw;
-	}
-
-	section.another div.inner_wrap_02 ul li div {
-		display: none
 	}
 
 	section.another div.inner_wrap_02 ul li img {
@@ -909,7 +912,7 @@ body {
 	}
 
 	section.another div.inner_wrap_02 p.desc {
-		font-family: '"Sansation", sans-serif-Regular';
+		font-family: 'JalpulrineunHaruche';
 		font-size: 1em;
 		line-height: 1.5;
 	}
