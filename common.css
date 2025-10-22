@@ -1,0 +1,22 @@
+@font-face {
+	font-family: 'JalpulrineunHaruche';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Haru.woff') format('woff');
+	font-weight: normal;
+	font-display: swap;
+}
+
+section {
+	overflow: hidden;
+}
+
+body {
+	font-family: 'JalpulrineunHaruche';
+	font-weight: 200;
+}
+
+.inner_wrap {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 40px;
+}
