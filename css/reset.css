@@ -1,5 +1,11 @@
 @charset "utf-8";
-
+@font-face {
+  font-family: 'JalpulrineunHaruche';
+  src: url('../fonts/JalpulrineunHaruche.woff2') format('woff2'),
+       url('../fonts/JalpulrineunHaruche.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 	/* ============ reset.css(start) ============ */
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -32,5 +38,6 @@ hr { border: none; }
 .blind { overflow: hidden; position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px; }
 
 .clearfix::after { content: ""; display: block; width: 0; height: 0; font-size: 0; clear: both; }
+
 
 		/* ============ reset.css(end) ============ */
