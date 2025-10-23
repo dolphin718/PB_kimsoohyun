@@ -780,7 +780,7 @@
 
 	section.pro div.bottom_wrap p {
 		font-size: 1.25em;
-		font-family: '' JalpulrineunHaruche'-Reguler';
+		font-family: 'JalpulrineunHaruche', sans-serif;
 		line-height: 1.5;
 		padding: 0 0 3.125vw;
 		display: -webkit-box;
@@ -869,6 +869,7 @@
 
 
 /* PC(end) */
+
 
 
 
