@@ -34,6 +34,31 @@
 
 		typeLetter();
 	});
+
+	document.addEventListener("DOMContentLoaded", function() {
+
+    let $FI_grps = document.querySelectorAll(".FI_grp");
+
+    function scroll_response_acts(evt) {
+        let st_pos = window.scrollY || document.documentElement.scrollTop;
+        let st_winH = st_pos + window.innerHeight;
+
+        $FI_grps.forEach((item) => {
+            let pos_add = item.classList.contains("fi_1") ? 0 : 50;
+            if (st_winH >= (st_pos + item.getBoundingClientRect().top + pos_add)) {
+                item.style.willChange = 'transform, opacity';
+                item.classList.add("active");
+                setTimeout(() => { item.style.willChange = 'auto'; }, 750);
+            } else if (st_winH < (st_pos + item.getBoundingClientRect().top)) {
+                item.style.willChange = 'auto';
+                item.classList.remove("active");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", scroll_response_acts);
+    scroll_response_acts(); // 처음 로드시 한 번 실행
+});
 </script>
 
 <body>
@@ -255,4 +280,5 @@
 
 
 </html>
+
 
