@@ -1,5 +1,14 @@
 @charset "utf-8";
+.FI_grp {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.7s ease;
+}
 
+.FI_grp.active {
+  opacity: 1;
+  transform: translateY(0);
+}
 /* 모바일(start) */
 
 @media screen and (max-width: 1024px) {
@@ -869,6 +878,7 @@
 
 
 /* PC(end) */
+
 
 
 
