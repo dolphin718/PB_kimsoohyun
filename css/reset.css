@@ -1,11 +1,5 @@
 @charset "utf-8";
-@font-face {
-  font-family: 'JalpulrineunHaruche';
-  src: url('../fonts/JalpulrineunHaruche.woff2') format('woff2'),
-       url('../fonts/JalpulrineunHaruche.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+
 	/* ============ reset.css(start) ============ */
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -41,3 +35,4 @@ hr { border: none; }
 
 
 		/* ============ reset.css(end) ============ */
+
